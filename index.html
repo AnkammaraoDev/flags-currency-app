@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flag Currency Webpag</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <p class="header-title">Where in the world?</p>
+    <p class="darktheme-text" onclick="DarkTheme()"> 🌙 Dark Mode</p>
+  </header>
+
+  <section class="right-section">
+    <div>
+        <input class="searchbar" type="text" placeholder="Search for a country..">
+    </div>
+      <select class="currencyFilter" name="currency">
+        <option vlaue="" disabled selected>Filter By Currency</option>
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+        <option value="ISK">ISK</option>
+        <option value="BRL">BRL</option>
+        <option value="BYR">BYR</option>
+        <option value="DZD">DZD</option>
+      </select>
+  </section>
+  
+  <div class="container">
+    <div class="card" data-currency="EUR">
+      <img src="pictures/Flag_of_Germany.svg" alt="flag">
+      <div class="flag-info">
+        <p class="card-title">
+        Germanay
+        </p>
+        <p class="currency-text">
+          Currency: <span class="currency">EUR</span>
+        </p>
+        <p class="dialcode">
+          DialCode: <span class="currency">49</span>
+        </p>
+      </div>
+
+    </div>
+    
+    <div class="card" data-currency="USD">
+      <img src="pictures/Flag_of_the_United_States.svg" alt="flag">
+      <div class="flag-info">
+        <p class="card-title">
+          United Sates of America
+        </p>
+        <p class="currency-text">
+          Currency: <span class="currency">USD</span>
+        </p>
+        <p class="dialcode">
+          DialCode: <span class="currency">1</span>
+        </p>
+      </div>
+    </div>
+    
+    <div class="card" data-currency="BRL">
+      <img src="pictures/Flag_of_Brazil.svg" alt="flag">
+      <div class="flag-info">
+        <p class="card-title">
+          Brazil
+        </p>
+        <p class="currency-text">
+          Currency: <span class="currency">BRL</span>
+        </p>
+        <p class="dialcode">
+          DialCode: <span class="currency">55</span>
+        </p>
+
+      </div>
+    </div>
+
+    <div  class="card" data-currency="ISK">
+      <img src="pictures/Flag_of_Iceland.svg" alt="flag">
+      <div class="flag-info">
+        <p  class="card-title">
+          Iceland
+        </p>
+        <p class="currency-text">
+          Currency: <span class="currency">ISK</span>
+        </p>
+        <p class="dialcode">
+          DialCode: <span class="currency">354</span>
+        </p>
+      </div>
+    
+    </div>
+
+    <div class="card" data-currency="AFN">
+      <img src="pictures/Flag-Afghanistan.webp" alt="flag">
+      <div class="flag-info">
+        <p  class="card-title">
+          Afganisthan
+        </p>
+        <p class="currency-text">
+          Currency: <span class="currency">AFN</span>
+        </p>
+        <p class="dialcode">
+          DialCode: <span class="currency">93</span>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card" data-currency="EUR">
+      <img src="pictures/Flag_of_Aland.svg.png" alt="flag">
+      <div class="flag-info">
+        <p  class="card-title">
+          Aland Islands
+        </p>
+        <p class="currency-text">
+          Currency: <span class="currency">EUR</span>
+        </p>
+        <p class="dialcode">
+          DialCode: <span class="currency">358-18</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-currency="ALL">
+      <img src="pictures/Flag_of_Albania.svg" alt="flag">
+      <div class="flag-info">
+        <p  class="card-title">
+          Albania
+        </p>
+        <p class="currency-text">
+          Currency: <span class="currency">ALL</span>
+        </p>
+        <p class="dialcode">
+          DialCode: <span class="currency">355</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-currency="DZD">
+      <img src="pictures/Flag_of_Algeria.svg" alt="flag">
+      <div class="flag-info">
+        <p  class="card-title">
+          Algiria
+        </p>
+        <p class="currency-text">
+          Currency: <span class="currency">DZD</span>
+        </p>
+        <p class="dialcode"> 
+          DialCode: <span class="currency">213</span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
