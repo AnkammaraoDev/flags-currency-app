@@ -7,9 +7,9 @@ const Handler = async () => {
   // List of countries you want
   const countryNames = [
     "Germany",
-    "United States of America",
-      "Brazil",
-      "Iceland",
+    "United States",
+    "Brazil",
+    "Iceland",
     "Afghanistan",
     "Aland Islands",
     "Albania",
@@ -59,16 +59,38 @@ const DarkTheme = function() {
   }
 };
 
-const filterDropdown = document.querySelector('.currencyFilter'); 
-const cards = document.querySelectorAll('.card');
+const filterDropdown = document.querySelector('.currencyFilter');
 
 filterDropdown.addEventListener('change', () => {
   const selectedCurrency = filterDropdown.value;
+  const cards = document.querySelectorAll('.card'); // Always get current cards
 
   cards.forEach(card => {
-    card.classList.remove('highlight'); // Remove highlight first
-    if (selectedCurrency && card.dataset.currency === selectedCurrency) {
-      card.classList.add('highlight'); // Add highlight if matches
+    if (!selectedCurrency || card.dataset.currency === selectedCurrency) {
+      card.style.display = "block"; // Show matching cards
+    } else {
+      card.style.display = "none"; // Hide non-matching cards
+    }
+  });
+});
+
+
+const searchBox = document.querySelector('.searchbar');
+const cards = document.querySelectorAll('.card');
+
+searchBox.addEventListener('input', () => {
+  const searchTerm = searchBox.value.trim().toLowerCase();
+
+  cards.forEach(card => {
+    const countryElement = card.querySelector('.card-title');
+    if (!countryElement) return;
+
+    const countryName = countryElement.textContent.trim().toLowerCase();
+    // Check if the country name starts with the search term or if the search term is empty
+    if (countryName.startsWith(searchTerm) || searchTerm === '') {
+      card.style.display = ''; 
+    } else {
+      card.style.display = 'none'; 
     }
   });
 });
