@@ -86,12 +86,11 @@ searchBox.addEventListener('input', () => {
     if (!countryElement) return;
 
     const countryName = countryElement.textContent.trim().toLowerCase();
-
-    // Show card if country name starts with the search term
+    // Check if the country name starts with the search term or if the search term is empty
     if (countryName.startsWith(searchTerm) || searchTerm === '') {
-      card.style.display = ''; // show the card
+      card.style.display = ''; 
     } else {
-      card.style.display = 'none'; // hide the card
+      card.style.display = 'none'; 
     }
   });
 });
