@@ -7,7 +7,7 @@ This project is built using **HTML, CSS, and JavaScript**, making it a lightweig
 
 
 ## Live Demo
-Check the live app here: https://ankam-ui.github.io/flags-currency-app/
+Check the live app here: https://ankammaraodev.github.io/flags-currency-app/
 
 ---
 
@@ -44,4 +44,4 @@ Check the live app here: https://ankam-ui.github.io/flags-currency-app/
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ankam-ui/flags-currency-app.git
+   git clone https://github.com/ankammaraodev/flags-currency-app.git
